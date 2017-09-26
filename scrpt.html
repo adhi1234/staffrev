@@ -1,0 +1,22 @@
+how to limit a text box in html accept only numbers and one digit
+<HTML>
+  <HEAD>
+<SCRIPT language=Javascript>
+       <!--
+       function isNumberKey(evt)
+       {
+          var charCode = (evt.which) ? evt.which : evt.keyCode;
+          if (charCode < 49 || charCode >51  )
+           
+             return false;
+
+          return true;
+       }
+       //-->
+    </SCRIPT>
+	</HEAD>
+  <BODY>
+ <td> <input type="text" name="T3" size="5"  maxlength="1" onkeypress="return isNumberKey(event) "></td>
+  
+  </BODY>
+</HTML>
